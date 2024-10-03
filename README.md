@@ -9,10 +9,6 @@ Welcome to the React Native Expo Boilerplate! This project serves as a starting 
 - [Installation](#installation)
 - [Usage](#usage)
 - [Scripts](#scripts)
-- [Testing](#testing)
-- [Linting and Formatting](#linting-and-formatting)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
