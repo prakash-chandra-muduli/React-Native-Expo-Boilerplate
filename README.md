@@ -1,62 +1,84 @@
-# Welcome to your Expo app 👋
+# React Native Expo Boilerplate
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Welcome to the React Native Expo Boilerplate! This project serves as a starting point for building mobile applications using Expo, React Native, and various libraries that enhance functionality. This README file provides guidance on setting up and using this project effectively.
 
-## Get started
+## Table of Contents
 
-1. Install dependencies
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Scripts](#scripts)
+- [Testing](#testing)
+- [Linting and Formatting](#linting-and-formatting)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Features
+
+- Cross-platform mobile application using Expo.
+- State management with Redux.
+- Navigation using React Navigation.
+- Linting and formatting using ESLint and Prettier.
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed:
+
+- [Node.js](https://nodejs.org/en/) (version 14 or higher)
+- [Yarn](https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable) (optional but recommended)
+- [Expo CLI](https://docs.expo.dev/get-started/installation/) (install globally with `npm install -g expo-cli`)
+
+## Installation
+
+1. Clone the repository:
 
    ```bash
-   npm install
+   git clone https://github.com/yourusername/react-native-expo-boilerplate.git
+   cd react-native-expo-boilerplate
    ```
 
-2. Start the app
-
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+2. Install the dependencies:
+   If you are using Yarn:
 
 ```bash
-npm run reset-project
+yarn install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Or with npm:
 
-## Learn more
+```bash
+npm install
 
-To learn more about developing your project with Expo, look at the following resources:
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+3. Set up Husky hooks:
+   npx husky install
 
-## Join the community
+4. Create your environment files based on your environment (development, staging, production):
+   Copy .env.example to .env.development, .env.staging, and .env.production, and configure them as needed.
 
-Join our community of developers creating universal apps.
+Usage
+To start the development server, run:
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```bash
+npm start
+```
 
-# jbhunt
+Scripts
+The following scripts are available in this project:
 
-# jbhunt
-
-# jbhunt
-
-# jbhunt
-
-# jbhunt
-
-# jbhunt
+```bash
+start: Start the Expo server.
+reset-project: Reset the project by running the specified script.
+android: Start the Expo server for Android.
+ios: Start the Expo server for iOS.
+web: Start the Expo server for web.
+test: Run tests with Jest.
+start:dev: Start the project with the development environment.
+start:stage: Start the project with the staging environment.
+start:prod: Start the project with the production environment.
+lint: Run ESLint on the project files.
+format: Format the code using Prettier.
+format:check: Check code formatting with Prettier.
+```
