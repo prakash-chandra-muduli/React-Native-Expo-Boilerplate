@@ -1,5 +1,3 @@
-
 export const Strings = {
-    appName:'Basic app'
-  };
-  
+  appName: 'Basic app',
+};
