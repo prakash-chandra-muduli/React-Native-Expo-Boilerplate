@@ -30,8 +30,8 @@ Before you begin, ensure you have the following installed:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/prakash-chandra-muduli/jbhunt.git
-   cd jbhunt
+   git clone https://github.com/prakash-chandra-muduli/React-Native-Expo-Boilerplate.git
+   cd React-Native-Expo-Boilerplate
    ```
 
 2. Install the dependencies:
