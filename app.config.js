@@ -1,7 +1,5 @@
 import 'dotenv/config';
 export default ({ config }) => {
-  console.log(process.env.ENV, '????????????ENV');
-
   return {
     ...config,
     extra: {
