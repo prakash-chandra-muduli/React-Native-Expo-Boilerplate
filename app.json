@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "JBHunt",
-    "slug": "JBHunt",
+    "name": "React_Native_Expo_Boilerplate",
+    "slug": "React_Native_Expo_Boilerplate",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",

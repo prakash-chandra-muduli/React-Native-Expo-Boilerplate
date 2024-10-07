@@ -5,13 +5,12 @@ import { ThemedText } from '@/components/atoms/ThemedText';
 import { Images } from '@/constants/Images';
 import { Strings } from '@/constants/Strings';
 import Constants from 'expo-constants';
+import { useSelector } from 'react-redux';
 
 export default function HomeScreen() {
+  const isUserLogin = useSelector((state: boolean) => state.auth.isLoggedIn);
   const apiUrl = Constants.expoConfig.extra.apiUrl;
   const environment = Constants.expoConfig.extra.environment;
-
-  console.log(apiUrl);
-  console.log(environment);
 
   return (
     <SafeAreaView>
