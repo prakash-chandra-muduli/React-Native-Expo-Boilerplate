@@ -11,7 +11,7 @@ export const store = configureStore({
   reducer: {
     auth: authReducer,
     user: userReducer,
-    todo :todoReducer
+    todo: todoReducer,
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({ thunk: false }).concat(sagaMiddleware),
