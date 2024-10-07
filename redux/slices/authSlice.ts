@@ -16,7 +16,7 @@ export const authSlice = createSlice({
       state.isLoggedIn = false;
     },
     updateUserInformation: (state, action) => {
-      state.userData = action.payload; 
+      state.userData = action.payload;
     },
   },
 });
