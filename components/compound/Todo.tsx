@@ -42,7 +42,9 @@ const Todo = () => {
   const renderItem = ({ item }: { item: any }) => {
     return (
       <View style={styles.listItem}>
-        <Text style={{ flex: 1 }}>{item.title}</Text>
+        <Text numberOfLines={1} style={{ flex: 1 }}>
+          {item.title}
+        </Text>
         <View style={{ flexDirection: 'row', gap: 5 }}>
           <TouchableOpacity
             style={styles.button}
@@ -90,7 +92,7 @@ const Todo = () => {
           }}
           style={styles.addButton}
         >
-          <Text>➕</Text>
+          <Text style={{ color: '#ffffff' }}>╋</Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>
@@ -101,37 +103,40 @@ export default Todo;
 
 const styles = StyleSheet.create({
   listItem: {
-    backgroundColor: '#EDDFE0',
+    backgroundColor: '#F5F5F7',
     width: '100%',
     flexDirection: 'row',
     paddingHorizontal: 6,
     paddingVertical: 4,
     borderRadius: 8,
     marginBottom: 10,
+    gap: 25,
   },
   centeredView: {
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: 22,
+    paddingTop: 5,
     gap: 6,
     minHeight: screenHeight,
     position: 'relative',
+    backgroundColor: '#EDDFE0',
   },
   button: {
-    backgroundColor: '#ffffff',
+    backgroundColor: '#EDDFE0',
     padding: 4,
     borderRadius: 6,
   },
   heading: {
     fontSize: 30,
     fontWeight: '500',
+    color: '#914F1E',
   },
   flatList: {
     width: '100%',
     paddingHorizontal: 10,
   },
   addButton: {
-    backgroundColor: '#B7B7B7',
+    backgroundColor: '#705C53',
     borderColor: '#F5F5F7',
     borderRadius: 50,
     padding: 4,

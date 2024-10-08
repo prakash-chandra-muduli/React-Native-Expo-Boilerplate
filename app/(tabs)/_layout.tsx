@@ -43,7 +43,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="history"
         options={{
-          title: 'History',
+          title: 'Task',
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon
               name={focused ? 'book' : 'book-outline'}

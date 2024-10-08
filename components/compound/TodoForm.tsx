@@ -65,7 +65,7 @@ const TodoForm: React.FC<TodoFormProps> = ({
   return (
     <Modal
       animationType="slide"
-      transparent={false}
+      transparent={true}
       visible={isAddingNewItem}
       onRequestClose={() => {
         Alert.alert('Are you sure you want to close the form?');
@@ -74,14 +74,14 @@ const TodoForm: React.FC<TodoFormProps> = ({
     >
       <SafeAreaView style={styles.safeArea}>
         <View style={styles.container}>
-          <ThemedText>Title *</ThemedText>
+          <ThemedText>Task *</ThemedText>
           <TextInput
             style={styles.input}
             editable={true}
             value={curretItem.title}
             onChangeText={(inputValue) => onChangeHandler(inputValue, 'title')}
           />
-          <ThemedText>Description</ThemedText>
+          <ThemedText>Task Details</ThemedText>
           <TextInput
             multiline={true}
             editable={true}
@@ -114,8 +114,14 @@ const TodoForm: React.FC<TodoFormProps> = ({
             }}
             onPress={closeForm}
           >
-            <Text style={{ ...styles.buttonText, color: '#00000' }}>
-              cancel
+            <Text
+              style={{
+                ...styles.buttonText,
+                color: '#00000',
+                borderColor: '#705C53',
+              }}
+            >
+              close
             </Text>
           </TouchableOpacity>
         </View>
@@ -144,7 +150,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
   },
   button: {
-    backgroundColor: 'blue',
+    backgroundColor: '#705C53',
     padding: 10,
     alignItems: 'center',
   },
