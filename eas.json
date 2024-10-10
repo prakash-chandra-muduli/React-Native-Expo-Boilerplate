@@ -3,11 +3,15 @@
     "preview": {
       "android": {
         "buildType": "apk"
-      }
+      },
+      "distribution": "internal"
     },
     "preview2": {
       "android": {
         "gradleCommand": ":app:assembleRelease"
+      },
+      "ios": {
+        "simulator": true
       }
     },
     "preview3": {
@@ -16,6 +20,17 @@
     "preview4": {
       "distribution": "internal"
     },
-    "production": {}
+    "production": {
+      "env": {
+        "EXPO_PUBLIC_API_URL": "https://api.production.com"
+      }
+    },
+    "development": {
+      "env": {
+        "EXPO_PUBLIC_API_URL": "https://api.development.com"
+      },
+      "developmentClient": true,
+      "distribution": "internal"
+    }
   }
 }

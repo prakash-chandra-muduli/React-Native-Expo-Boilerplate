@@ -25,7 +25,7 @@ export const todoSlice = createSlice({
       state,
       action: PayloadAction<{ index: number; data: Partial<TodoItem> }>
     ) => {
-      const { index, data } = action.payload;
+      const { index, data } = action.payload;     
       state.todoList[index] = { ...state.todoList[index], ...data };
     },
     deleteTodoItem: (state, action: PayloadAction<number>) => {

@@ -8,17 +8,15 @@ import persistReducer from 'redux-persist/es/persistReducer';
 import persistStore from 'redux-persist/es/persistStore';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-
 const persistConfig = {
-  key: 'root', 
-  storage:AsyncStorage,
-
+  key: 'root',
+  storage: AsyncStorage,
 };
 
 const rootReducer = combineReducers({
   auth: authReducer,
-    user: userReducer,
-    todo: todoReducer,
+  user: userReducer,
+  todo: todoReducer,
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
@@ -28,7 +26,9 @@ const sagaMiddleware = createSagaMiddleware();
 export const store = configureStore({
   reducer: persistedReducer,
   middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware({ thunk: false ,  serializableCheck: false,}).concat(sagaMiddleware),
+    getDefaultMiddleware({ thunk: false, serializableCheck: false }).concat(
+      sagaMiddleware
+    ),
 });
 
 export type RootState = ReturnType<typeof store.getState>;
