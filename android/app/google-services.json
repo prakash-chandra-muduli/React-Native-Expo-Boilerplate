@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "306407668870",
+    "project_id": "fir-project-3ec93",
+    "storage_bucket": "fir-project-3ec93.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:306407668870:android:f623a4ac6342214f2c6507",
+        "android_client_info": {
+          "package_name": "com.developer.React_Native_Expo_Boilerplate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGqPLRl22Jb20iiXGRrxlqbKb-RBUuR-g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
